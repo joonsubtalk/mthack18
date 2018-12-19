@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import CurrentPost from '../components/CurrentPost';
+import ServiceModal from '../components/ServiceModal';
 import { store } from '../store/store';
 
 
@@ -10,7 +10,7 @@ export default class LeftPanel extends Component {
     render() {
         return (
             <Provider store={store}>
-            <CurrentPost />
+                <ServiceModal />
             </Provider>
         );
     }
